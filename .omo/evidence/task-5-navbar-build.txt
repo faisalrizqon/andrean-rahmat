@@ -1,0 +1,72 @@
+Task 5 - Layout Shell (Navbar) Build Evidence
+==============================================
+Date: 2026-06-25
+Project: andre-property-website
+
+## Files Modified
+- src/app/layout.tsx
+  - Added import: I18nProvider from "@/i18n/I18nProvider"
+  - Wrapped {children} with <I18nProvider>{children}</I18nProvider>
+  - Changed <html lang="en"> to <html lang="id"> (default locale)
+  - Kept Playfair Display + Inter fonts, metadata unchanged
+
+- src/app/page.tsx
+  - Imported Navbar from "@/components/layout/Navbar"
+  - Rendered <Navbar /> at top
+  - Rendered <main className="flex-1"> with 9 placeholder sections
+  - Each section: id, className="section-padding", container-custom div, h2 with label
+  - Sections: hero, about, experience, skills, portfolio, testimoni, booking, contact, blog
+
+## Files Created
+- src/components/layout/Navbar.tsx ("use client" component)
+  - useI18n() hook for t(), locale, toggleLocale
+  - siteConfig.profile.name ("Andre Rahmat") for brand
+  - NAV_ITEMS array: 9 items mapping id -> labelKey (nav.home, nav.about, etc.)
+  - Sticky header: fixed top-0, z-50
+  - Backdrop blur on scroll: useState + useEffect scroll listener (threshold 20px)
+    - scrolled state -> bg-neutral-50/90 backdrop-blur-md shadow-soft
+    - not scrolled -> bg-transparent
+  - Brand: circular avatar (first letter) + name, links to #hero
+  - Desktop nav: hidden on mobile (hidden md:flex), links with t() labels
+  - Language toggle: button showing "EN" when locale="id", "ID" when locale="en"
+    - Uses FiGlobe icon from react-icons/fi
+    - Desktop: bordered button top-right
+    - Mobile: full-width primary button in drawer footer
+  - Mobile hamburger: md:hidden, FiMenu icon, opens drawer
+  - Mobile drawer:
+    - Fixed overlay z-50, backdrop click closes, Escape key closes
+    - Slide-in from right (translate-x-full -> translate-x-0, 300ms ease-out)
+    - w-72 max-w-80vw, bg-neutral-50, shadow-strong
+    - Header with brand + close (FiX), border-b
+    - Nav list (full items), close on click
+    - Footer with language toggle button
+    - Body scroll lock when open (document.body.style.overflow)
+  - Smooth scroll: handleNavClick uses scrollIntoView({behavior:"smooth"})
+    - Prevents default anchor, closes mobile menu
+  - All styling via Tailwind classes using design tokens (primary-800, neutral-50, etc.)
+
+## Verification
+- npx tsc --noEmit: EXIT 0 (no type errors)
+- npm run build: EXIT 0
+  - Next.js 16.2.9 (Turbopack)
+  - Compiled successfully in 3.8s
+  - TypeScript check passed in 3.5s
+  - Static pages generated: / and /_not-found (both static prerender)
+  - Route (app): / (Static), /_not-found (Static)
+
+## Design Token Usage (no hardcoded magic numbers)
+- Colors: bg-neutral-50/90, text-primary-800, bg-primary-800, text-neutral-50,
+  border-primary-200, hover:bg-primary-50, bg-accent-500, text-neutral-700/900
+- Shadows: shadow-soft, shadow-strong (from @theme tokens)
+- Fonts: font-heading (Playfair via --font-heading token)
+- Layout: container-custom, section-padding (custom utilities from globals.css)
+- Heights: h-20 (navbar), w-9/h-9 (avatar), w-72 (drawer)
+- Icons: FiMenu, FiX, FiGlobe from react-icons/fi (already installed)
+
+## Notes
+- CSS smooth scroll + scroll-padding-top: 80px already in globals.css (not modified)
+- I18nProvider ensures locale state syncs from localStorage in useEffect (hydration-safe)
+- Language toggle updates ALL visible labels immediately (React Context re-render)
+- Mobile drawer uses opacity+translate transition for smooth open/close
+- No additional packages installed (react-icons already present)
+- No modifications to globals.css, i18n files, or site.ts

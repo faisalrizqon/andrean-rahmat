@@ -1,0 +1,21 @@
+﻿BUILD EVIDENCE - Task 2 Design Tokens
+Date: 2026-06-25 21:33:42
+Command: npm run build
+Exit Code: 0
+
+Output:
+▲ Next.js 16.2.9 (Turbopack)
+✓ Compiled successfully in 2.7s
+  Running TypeScript ...
+  Finished TypeScript in 2.4s ...
+✓ Generating static pages using 5 workers (4/4) in 715ms
+
+Route (app)
+┌ ○ /
+└ ○ /_not-found
+
+Result: PASS - build exits 0
+
+Files modified:
+- src/app/globals.css (replaced minimal @theme inline with comprehensive @theme: primary/accent/neutral/semantic colors, fonts, shadows, base styles, .container-custom, .section-padding utilities; removed dark mode media query)
+- src/app/layout.tsx (swapped Geist+Geist_Mono to Playfair_Display+Inter via next/font/google with --font-playfair and --font-inter variables)
