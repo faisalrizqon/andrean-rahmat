@@ -13,9 +13,7 @@ export default function Booking() {
     name: "",
     whatsapp: "",
     email: "",
-    property_type: "",
-    location: "",
-    survey_date: "",
+    service_type: "",
     message: "",
   });
 
@@ -34,7 +32,7 @@ export default function Booking() {
     try {
       const result = await submitForm(
         { ...formData, from_name_field: formData.name },
-        `Booking Survey - ${formData.name}`
+        `Hire Me Inquiry - ${formData.name}`
       );
 
       if (result.success) {
@@ -43,9 +41,7 @@ export default function Booking() {
           name: "",
           whatsapp: "",
           email: "",
-          property_type: "",
-          location: "",
-          survey_date: "",
+          service_type: "",
           message: "",
         });
       } else {
@@ -132,69 +128,41 @@ export default function Booking() {
                 />
               </div>
 
-              {/* Property Type */}
+              {/* Service Type */}
               <div>
-                <label htmlFor="booking-property-type" className={labelClasses}>
-                  {t("booking.propertyType")}
+                <label htmlFor="booking-service-type" className={labelClasses}>
+                  {t("booking.serviceType")}
                 </label>
                 <select
-                  id="booking-property-type"
-                  name="property_type"
-                  value={formData.property_type}
+                  id="booking-service-type"
+                  name="service_type"
+                  value={formData.service_type}
                   onChange={handleChange}
                   className={inputClasses}
                 >
-                  <option value="">{t("booking.propertyType")}</option>
-                  <option value="subsidi">{t("booking.propertyType.subsidi")}</option>
-                  <option value="commercial">{t("booking.propertyType.commercial")}</option>
-                  <option value="other">{t("booking.propertyType.other")}</option>
+                  <option value="">{t("booking.serviceType")}</option>
+                  <option value="social_media">{t("booking.serviceType.socialMedia")}</option>
+                  <option value="content_creation">{t("booking.serviceType.contentCreation")}</option>
+                  <option value="meta_ads">{t("booking.serviceType.metaAds")}</option>
+                  <option value="consultation">{t("booking.serviceType.consultation")}</option>
+                  <option value="other">{t("booking.serviceType.other")}</option>
                 </select>
               </div>
 
-              {/* Location */}
-              <div>
-                <label htmlFor="booking-location" className={labelClasses}>
-                  {t("booking.location")}
-                </label>
-                <input
-                  id="booking-location"
-                  type="text"
-                  name="location"
-                  value={formData.location}
-                  onChange={handleChange}
-                  className={inputClasses}
-                  placeholder={t("booking.location")}
-                />
-              </div>
-
-              {/* Survey Date */}
-              <div>
-                <label htmlFor="booking-date" className={labelClasses}>
-                  {t("booking.surveyDate")}
-                </label>
-                <input
-                  id="booking-date"
-                  type="date"
-                  name="survey_date"
-                  value={formData.survey_date}
-                  onChange={handleChange}
-                  className={inputClasses}
-                />
-              </div>
-
-              {/* Notes - full width */}
+              {/* Project Details / Message - full width */}
               <div className="md:col-span-2">
                 <label htmlFor="booking-notes" className={labelClasses}>
-                  {t("booking.notes")}
+                  {t("booking.message")} <span className="text-red-500">*</span>
                 </label>
                 <textarea
                   id="booking-notes"
                   name="message"
                   rows={4}
+                  required
                   value={formData.message}
                   onChange={handleChange}
                   className={inputClasses}
-                  placeholder={t("booking.notes")}
+                  placeholder={t("booking.message")}
                 />
               </div>
             </div>

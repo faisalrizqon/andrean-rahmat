@@ -37,7 +37,7 @@ export default function ExperienceSection() {
                 <li key={entry.id} className="relative">
                   {/* Timeline dot */}
                   <span
-                    className="absolute -left-[2.125rem] top-1 w-3 h-3 rounded-full bg-accent-500 ring-4 ring-neutral-50"
+                    className="absolute -left-[2.4375rem] top-1 w-3 h-3 rounded-full bg-accent-500 ring-4 ring-neutral-50"
                     aria-hidden="true"
                   />
 

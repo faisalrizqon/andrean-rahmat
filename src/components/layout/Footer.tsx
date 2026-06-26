@@ -54,7 +54,7 @@ export default function Footer() {
           {/* Brand column */}
           <div>
             <span className="font-heading text-xl font-bold tracking-tight">
-              Andre Property
+              Andrean Rachmat
             </span>
             <p className="mt-3 text-sm text-neutral-300 leading-relaxed">
               {tagline}
@@ -128,7 +128,7 @@ export default function Footer() {
                 className="w-10 h-10 rounded-full border border-primary-700 flex items-center justify-center text-neutral-300 hover:bg-primary-700 hover:text-neutral-50 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-400 focus-visible:ring-offset-2 focus-visible:ring-offset-primary-900"
                 aria-label="Instagram"
               >
-                <FaInstagram className="w-5 h-5" aria-hidden="true" />
+                <FaInstagram className="w-6 h-6" aria-hidden="true" />
               </a>
               <a
                 href={siteConfig.social.tiktok}

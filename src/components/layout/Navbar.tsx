@@ -3,7 +3,6 @@
 import { useEffect, useState } from "react";
 import { FiMenu, FiX, FiGlobe } from "react-icons/fi";
 import { useI18n } from "@/i18n/useI18n";
-import { siteConfig } from "@/config/site";
 
 type NavItem = {
   id: string;
@@ -55,7 +54,6 @@ export default function Navbar() {
     return () => window.removeEventListener("keydown", onKey);
   }, []);
 
-  const brandName = siteConfig.profile.name;
   const langToggleLabel = locale === "id" ? "EN" : "ID";
 
   const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
@@ -71,47 +69,43 @@ export default function Navbar() {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
-          ? "bg-neutral-50/90 backdrop-blur-md shadow-soft"
+          ? "bg-gradient-to-b from-neutral-50/70 via-neutral-50/55 to-neutral-50/40 backdrop-blur-md"
           : "bg-transparent"
       }`}
     >
-      <nav className="container-custom flex items-center justify-between h-20">
-        {/* Brand */}
-        <a
-          href="#hero"
-          onClick={(e) => handleNavClick(e, "hero")}
-          className="flex items-center gap-2 group rounded-md focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-400 focus-visible:ring-offset-2 focus-visible:ring-offset-neutral-50"
-          aria-label={brandName}
-        >
-          <span className="w-9 h-9 rounded-full bg-primary-800 text-neutral-50 flex items-center justify-center font-heading text-lg font-bold group-hover:bg-accent-500 transition-colors">
-            {brandName.charAt(0)}
-          </span>
-          <span className="font-heading text-xl font-bold text-primary-800 tracking-tight">
-            {brandName}
-          </span>
-        </a>
+      <nav className="container-custom grid grid-cols-[1fr_auto_1fr] items-center h-20">
+        {/* Left spacer — balances right cluster for true centering */}
+        <div />
 
-        {/* Desktop nav links */}
-        <ul className="hidden md:flex items-center gap-1">
+        <ul className="hidden xl:flex items-center gap-1 justify-self-center">
           {NAV_ITEMS.map((item) => (
             <li key={item.id}>
               <a
                 href={`#${item.id}`}
                 onClick={(e) => handleNavClick(e, item.id)}
-                className="px-3 py-2 text-sm font-medium text-neutral-700 hover:text-primary-800 hover:bg-primary-50/60 rounded-md transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-400 focus-visible:ring-offset-2 focus-visible:ring-offset-neutral-50"
+                className={`group relative px-2.5 py-2 text-sm font-medium transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-400 focus-visible:ring-offset-2 focus-visible:ring-offset-neutral-50 ${
+                  scrolled
+                    ? "text-neutral-700 hover:text-accent-600"
+                    : "text-accent-700 hover:text-accent-800"
+                }`}
               >
                 {t(item.labelKey)}
+                <span className="absolute bottom-0 left-1/2 h-0.5 w-0 -translate-x-1/2 rounded-full bg-accent-500 transition-all duration-300 ease-out group-hover:w-full" />
               </a>
             </li>
           ))}
         </ul>
 
         {/* Right cluster: language toggle + mobile hamburger */}
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2 justify-self-end">
           <button
             type="button"
             onClick={toggleLocale}
-            className="flex items-center gap-1.5 px-3 py-2 text-sm font-semibold text-primary-800 border border-primary-200 rounded-md hover:bg-primary-50 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-400 focus-visible:ring-offset-2 focus-visible:ring-offset-neutral-50"
+            className={`flex items-center gap-1.5 px-3 py-2 text-sm font-semibold border rounded-md transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-400 focus-visible:ring-offset-2 focus-visible:ring-offset-neutral-50 ${
+              scrolled
+                ? "text-accent-600 border-accent-200 hover:bg-accent-50/50"
+                : "text-accent-700 border-accent-300/50 hover:bg-accent-50/30"
+            }`}
             aria-label={locale === "id" ? "Switch to English" : "Ganti ke Bahasa Indonesia"}
           >
             <FiGlobe className="w-4 h-4" aria-hidden="true" />
@@ -121,7 +115,11 @@ export default function Navbar() {
           <button
             type="button"
             onClick={() => setMobileOpen(true)}
-            className="md:hidden p-2 text-primary-800 hover:bg-primary-50 rounded-md transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-400 focus-visible:ring-offset-2 focus-visible:ring-offset-neutral-50"
+            className={`xl:hidden p-2 rounded-md transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-400 focus-visible:ring-offset-2 focus-visible:ring-offset-neutral-50 ${
+              scrolled
+                ? "text-accent-600 hover:bg-accent-50/50"
+                : "text-accent-700 hover:bg-accent-50/30"
+            }`}
             aria-label="Open menu"
             aria-expanded={mobileOpen}
           >
@@ -132,7 +130,7 @@ export default function Navbar() {
 
       {/* Mobile drawer */}
       <div
-        className={`md:hidden fixed inset-0 z-50 transition-opacity duration-300 ${
+        className={`xl:hidden fixed inset-0 z-50 transition-opacity duration-300 ${
           mobileOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
         }`}
         aria-hidden={!mobileOpen}
@@ -151,7 +149,7 @@ export default function Navbar() {
         >
           <div className="flex items-center justify-between h-20 px-5 border-b border-neutral-200">
             <span className="font-heading text-lg font-bold text-primary-800">
-              {brandName}
+              Menu
             </span>
             <button
               type="button"

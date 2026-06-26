@@ -1,4 +1,4 @@
-import dynamic from "next/dynamic";
+﻿import dynamic from "next/dynamic";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import Hero from "@/components/sections/Hero";
@@ -9,8 +9,6 @@ import Portfolio from "@/components/sections/Portfolio";
 import Booking from "@/components/sections/Booking";
 import Contact from "@/components/sections/Contact";
 
-// Lazy-loaded below-fold sections: SSR kept on (no ssr:false) for SEO, only JS chunk is deferred.
-const Testimoni = dynamic(() => import("@/components/sections/Testimoni"));
 const Blog = dynamic(() => import("@/components/sections/Blog"));
 
 export default function Home() {
@@ -23,7 +21,6 @@ export default function Home() {
         <Experience />
         <Skills />
         <Portfolio />
-        <Testimoni />
         <Booking />
         <Contact />
         <Blog />

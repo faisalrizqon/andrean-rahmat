@@ -12,7 +12,7 @@ type I18nContextValue = {
 
 export const I18nContext = createContext<I18nContextValue | undefined>(undefined);
 
-const STORAGE_KEY = "andre-property-locale";
+const STORAGE_KEY = "andrean-rachmat-locale";
 
 export function I18nProvider({ children }: { children: ReactNode }) {
   const [locale, setLocaleState] = useState<Locale>("id");

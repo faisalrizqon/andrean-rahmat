@@ -47,7 +47,8 @@ export interface PortfolioItem {
   description: string;
   descriptionEn: string;
   driveLink: string;
-  sampleImageLabel: string; // placeholder label
+  image: string;
+  sampleImageLabel: string;
 }
 
 export interface Testimoni {

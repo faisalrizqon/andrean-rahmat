@@ -7,7 +7,7 @@ export async function submitForm(
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({
       access_key: process.env.NEXT_PUBLIC_WEB3FORMS_KEY || "YOUR_KEY_HERE",
-      from_name: "Andre Property Website",
+      from_name: "Andrean Rachmat Website",
       subject,
       ...formData,
     }),

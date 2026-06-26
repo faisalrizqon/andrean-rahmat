@@ -13,17 +13,17 @@
   --color-primary-800: #1E3A5F;
   --color-primary-900: #102a43;
 
-  /* Colors - Accent (Sky Blue for property sales approachability) */
-  --color-accent-50: #eff6fc;
-  --color-accent-100: #d9ebf8;
-  --color-accent-200: #b6d8f0;
-  --color-accent-300: #88bee5;
-  --color-accent-400: #5B9BD5;
-  --color-accent-500: #4A90E2;
-  --color-accent-600: #3a7bc8;
-  --color-accent-700: #2e62a3;
-  --color-accent-800: #295286;
-  --color-accent-900: #244670;
+  /* Colors - Accent (Deep Sapphire Blue — premium) */
+  --color-accent-50: #e3e9f5;
+  --color-accent-100: #c5d1e8;
+  --color-accent-200: #97add5;
+  --color-accent-300: #5f7ebd;
+  --color-accent-400: #2b5a9e;
+  --color-accent-500: #1a4280;
+  --color-accent-600: #163568;
+  --color-accent-700: #122a52;
+  --color-accent-800: #0e2240;
+  --color-accent-900: #0a1830;
 
   /* Neutrals - Warm whites and charcoals */
   --color-neutral-50: #fafaf9;

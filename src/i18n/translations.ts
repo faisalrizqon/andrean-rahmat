@@ -9,7 +9,7 @@ export const translations = {
     "nav.skills": "Keahlian",
     "nav.portfolio": "Portofolio",
     "nav.testimoni": "Testimoni",
-    "nav.booking": "Booking Survey",
+    "nav.booking": "Hire Me",
     "nav.contact": "Kontak",
     "nav.blog": "Blog",
 
@@ -47,20 +47,20 @@ export const translations = {
     "testimoni.note": "Testimoni akan diperbarui segera",
 
     // Booking
-    "booking.title": "Booking Survey Properti",
-    "booking.subtitle": "Isi form di bawah untuk menjadwalkan survei properti",
+    "booking.title": "Bekerja Sama Saya",
+    "booking.subtitle": "Isi form di bawah untuk diskusi proyek atau kerjasama",
     "booking.name": "Nama Lengkap",
     "booking.whatsapp": "Nomor WhatsApp",
     "booking.email": "Email (opsional)",
-    "booking.propertyType": "Tipe Properti",
-    "booking.propertyType.subsidi": "Rumah Subsidi",
-    "booking.propertyType.commercial": "Rumah Komersial",
-    "booking.propertyType.other": "Lainnya",
-    "booking.location": "Lokasi Preferensi",
-    "booking.surveyDate": "Tanggal Preferensi Survey",
-    "booking.notes": "Catatan",
-    "booking.submit": "Kirim Booking",
-    "booking.success": "Booking survey berhasil dikirim! Kami akan menghubungi Anda segera.",
+    "booking.serviceType": "Jenis Layanan",
+    "booking.serviceType.socialMedia": "Social Media Management",
+    "booking.serviceType.contentCreation": "Content Creation",
+    "booking.serviceType.metaAds": "Meta Ads / Paid Advertising",
+    "booking.serviceType.consultation": "Konsultasi Digital Marketing",
+    "booking.serviceType.other": "Lainnya",
+    "booking.message": "Detail Proyek / Pesan",
+    "booking.submit": "Kirim Inquiry",
+    "booking.success": "Inquiry berhasil dikirim! Saya akan menghubungi Anda segera.",
     "booking.error": "Terjadi kesalahan. Silakan coba lagi atau hubungi via WhatsApp.",
 
     // Contact
@@ -79,7 +79,7 @@ export const translations = {
     // Blog
     "blog.title": "Blog",
     "blog.comingSoon": "Coming Soon",
-    "blog.comingSoonMessage": "Artikel tips property & digital marketing coming soon",
+    "blog.comingSoonMessage": "Artikel tips digital marketing & social media coming soon",
     "blog.notifyText": "Ingin tahu saat blog live? Hubungi saya!",
 
     // Footer
@@ -87,7 +87,7 @@ export const translations = {
     "footer.contact": "Kontak",
     "footer.downloadCv": "Download CV",
     "footer.backToTop": "Kembali ke Atas",
-    "footer.copyright": "© 2026 Andre Property. All rights reserved.",
+    "footer.copyright": "© 2026 Andrean Rachmat. All rights reserved.",
 
     // Form labels & errors
     "formLabels.required": "wajib diisi",
@@ -111,7 +111,7 @@ export const translations = {
     "nav.skills": "Skills",
     "nav.portfolio": "Portfolio",
     "nav.testimoni": "Testimonials",
-    "nav.booking": "Book Survey",
+    "nav.booking": "Hire Me",
     "nav.contact": "Contact",
     "nav.blog": "Blog",
 
@@ -149,20 +149,20 @@ export const translations = {
     "testimoni.note": "Testimonials will be updated soon",
 
     // Booking
-    "booking.title": "Book Property Survey",
-    "booking.subtitle": "Fill out the form below to schedule a property survey",
+    "booking.title": "Work With Me",
+    "booking.subtitle": "Fill out the form below to discuss a project or collaboration",
     "booking.name": "Full Name",
     "booking.whatsapp": "WhatsApp Number",
     "booking.email": "Email (optional)",
-    "booking.propertyType": "Property Type",
-    "booking.propertyType.subsidi": "Subsidized Housing",
-    "booking.propertyType.commercial": "Commercial Housing",
-    "booking.propertyType.other": "Other",
-    "booking.location": "Preferred Location",
-    "booking.surveyDate": "Preferred Survey Date",
-    "booking.notes": "Notes",
-    "booking.submit": "Submit Booking",
-    "booking.success": "Survey booking sent successfully! We will contact you soon.",
+    "booking.serviceType": "Service Type",
+    "booking.serviceType.socialMedia": "Social Media Management",
+    "booking.serviceType.contentCreation": "Content Creation",
+    "booking.serviceType.metaAds": "Meta Ads / Paid Advertising",
+    "booking.serviceType.consultation": "Digital Marketing Consultation",
+    "booking.serviceType.other": "Other",
+    "booking.message": "Project Details / Message",
+    "booking.submit": "Send Inquiry",
+    "booking.success": "Inquiry sent successfully! I will contact you soon.",
     "booking.error": "An error occurred. Please try again or contact via WhatsApp.",
 
     // Contact
@@ -181,7 +181,7 @@ export const translations = {
     // Blog
     "blog.title": "Blog",
     "blog.comingSoon": "Coming Soon",
-    "blog.comingSoonMessage": "Property tips & digital marketing articles coming soon",
+    "blog.comingSoonMessage": "Digital marketing & social media articles coming soon",
     "blog.notifyText": "Want to know when blog goes live? Contact me!",
 
     // Footer
@@ -189,7 +189,7 @@ export const translations = {
     "footer.contact": "Contact",
     "footer.downloadCv": "Download CV",
     "footer.backToTop": "Back to Top",
-    "footer.copyright": "© 2026 Andre Property. All rights reserved.",
+    "footer.copyright": "© 2026 Andrean Rachmat. All rights reserved.",
 
     // Form labels & errors
     "formLabels.required": "required",

@@ -18,16 +18,16 @@ const seoDescription = siteConfig.profile.taglineEn;
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "Andre Property - Digital Marketing & Social Media Specialist",
-    template: "%s | Andre Property",
+    default: "Andrean Rachmat - Digital Marketing & Social Media Specialist",
+    template: "%s | Andrean Rachmat",
   },
   description: seoDescription,
   keywords: [
     "Andre Rahmat",
-    "Andre Property",
+    "Andrean Rachmat",
     "Digital Marketing",
     "Social Media Specialist",
-    "Property Sales",
+    "Content Creation",
     "Meta Ads",
     "TikTok Marketing",
     "Indonesia",
@@ -39,8 +39,8 @@ export const metadata: Metadata = {
     locale: "id_ID",
     alternateLocale: ["en_US"],
     url: siteUrl,
-    siteName: "Andre Property",
-    title: "Andre Property - Digital Marketing & Social Media Specialist",
+    siteName: "Andrean Rachmat",
+    title: "Andrean Rachmat - Digital Marketing & Social Media Specialist",
     description: seoDescription,
     // TODO: Add /public/og-image.png (1200x630) for social sharing previews
     images: [
@@ -48,13 +48,13 @@ export const metadata: Metadata = {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Andre Property",
+        alt: "Andrean Rachmat",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Andre Property - Digital Marketing & Social Media Specialist",
+    title: "Andrean Rachmat - Digital Marketing & Social Media Specialist",
     description: seoDescription,
     // TODO: Add /public/og-image.png for Twitter card previews
     images: ["/og-image.png"],
