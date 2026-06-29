@@ -90,7 +90,7 @@ export default function Contact() {
           {/* Quick contact buttons */}
           <div className="flex flex-col gap-4">
             <a
-              href={`https://wa.me/${siteConfig.whatsapp}`}
+              href={siteConfig.whatsappLink}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-3 w-full justify-center rounded-lg bg-[#25D366] px-6 py-3.5 font-semibold text-white shadow-soft hover:bg-[#1da851] transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-400 focus-visible:ring-offset-2 focus-visible:ring-offset-neutral-50"

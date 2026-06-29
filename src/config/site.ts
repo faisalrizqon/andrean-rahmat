@@ -20,15 +20,14 @@ export const siteConfig: SiteConfig = {
     googleDrive: "https://drive.google.com/drive/folders/127yBTp1emL7RhjAt-NETW3G9CPs8OnJa",
     cvDrive: "https://drive.google.com/drive/folders/127yBTp1emL7RhjAt-NETW3G9CPs8OnJa",
   },
-  // TODO: UPDATE WITH REAL WHATSAPP NUMBER (format: 628xxxxxxxxxx)
-  whatsapp: "6281234567890",
+  whatsappLink: "https://wa.me/message/T33HYTA5AXJRI1",
   experiences: [
     {
       id: "freelance-andre",
       role: "Freelance Digital Marketing Specialist",
       roleEn: "Freelance Digital Marketing Specialist",
       company: "Andre Property",
-      period: "Mei 2026 - Sekarang",
+      period: "Apr 2026 - Sekarang",
       description: "Mengelola pemasaran digital melalui konten TikTok dan Instagram, mulai dari riset, pembuatan konsep, hingga publikasi konten.",
       descriptionEn: "Managing digital marketing through TikTok and Instagram content, from research, concept creation, to content publication.",
       achievements: [
@@ -46,7 +45,7 @@ export const siteConfig: SiteConfig = {
       role: "Digital Marketing Specialist",
       roleEn: "Digital Marketing Specialist",
       company: "PT Permata Sentul",
-      period: "Sep 2025 - Apr 2026",
+      period: "Nov 2025 - Mar 2026",
       description: "Melakukan pemasaran digital melalui Meta Ads & konten TikTok untuk meningkatkan leads dan konversi.",
       descriptionEn: "Performing digital marketing through Meta Ads & TikTok content to increase leads and conversions.",
       achievements: [
@@ -77,6 +76,7 @@ export const siteConfig: SiteConfig = {
   skills: {
     hard: [
       "Social Media Management (TikTok & Instagram)",
+      "1+ Brand di Handle",
       "Content Strategy & Planning",
       "Copywriting (Caption, Hook, Script)",
       "Digital Marketing Basic",
@@ -137,36 +137,6 @@ export const siteConfig: SiteConfig = {
       driveLink: "https://drive.google.com/drive/folders/127yBTp1emL7RhjAt-NETW3G9CPs8OnJa",
       image: "/portfolio/kpi.jpg",
       sampleImageLabel: "KPI Dashboard Report",
-    },
-  ],
-  // TODO: UPDATE WITH REAL TESTIMONI FROM CLIENTS
-  testimoni: [
-    {
-      id: "testimoni-1",
-      name: "[Nama Klien]",
-      role: "Klien",
-      roleEn: "Client",
-      message: "Testimoni dari klien akan ditampilkan di sini.",
-      messageEn: "Testimonial from client will be displayed here.",
-      isPlaceholder: true,
-    },
-    {
-      id: "testimoni-2",
-      name: "[Nama Klien]",
-      role: "Klien",
-      roleEn: "Client",
-      message: "Testimoni dari klien akan ditampilkan di sini.",
-      messageEn: "Testimonial from client will be displayed here.",
-      isPlaceholder: true,
-    },
-    {
-      id: "testimoni-3",
-      name: "[Nama Atasan]",
-      role: "Mantan Atasan",
-      roleEn: "Former Supervisor",
-      message: "Testimoni dari atasan akan ditampilkan di sini.",
-      messageEn: "Testimonial from supervisor will be displayed here.",
-      isPlaceholder: true,
     },
   ],
 };

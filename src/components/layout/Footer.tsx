@@ -18,8 +18,6 @@ const NAV_ITEMS = [
   { id: "experience", labelKey: "nav.experience" },
   { id: "skills", labelKey: "nav.skills" },
   { id: "portfolio", labelKey: "nav.portfolio" },
-  { id: "testimoni", labelKey: "nav.testimoni" },
-  { id: "booking", labelKey: "nav.booking" },
   { id: "contact", labelKey: "nav.contact" },
   { id: "blog", labelKey: "nav.blog" },
 ];
@@ -102,7 +100,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href={`https://wa.me/${siteConfig.whatsapp}`}
+                  href={siteConfig.whatsappLink}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 text-sm text-neutral-300 hover:text-neutral-50 transition-colors rounded focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-400 focus-visible:ring-offset-2 focus-visible:ring-offset-primary-900"

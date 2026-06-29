@@ -8,8 +8,6 @@ export const translations = {
     "nav.experience": "Pengalaman",
     "nav.skills": "Keahlian",
     "nav.portfolio": "Portofolio",
-    "nav.testimoni": "Testimoni",
-    "nav.booking": "Hire Me",
     "nav.contact": "Kontak",
     "nav.blog": "Blog",
 
@@ -41,27 +39,6 @@ export const translations = {
     // Portfolio
     "portfolio.title": "Portofolio",
     "portfolio.viewDetail": "Lihat di Google Drive",
-
-    // Testimoni
-    "testimoni.title": "Testimoni",
-    "testimoni.note": "Testimoni akan diperbarui segera",
-
-    // Booking
-    "booking.title": "Bekerja Sama Saya",
-    "booking.subtitle": "Isi form di bawah untuk diskusi proyek atau kerjasama",
-    "booking.name": "Nama Lengkap",
-    "booking.whatsapp": "Nomor WhatsApp",
-    "booking.email": "Email (opsional)",
-    "booking.serviceType": "Jenis Layanan",
-    "booking.serviceType.socialMedia": "Social Media Management",
-    "booking.serviceType.contentCreation": "Content Creation",
-    "booking.serviceType.metaAds": "Meta Ads / Paid Advertising",
-    "booking.serviceType.consultation": "Konsultasi Digital Marketing",
-    "booking.serviceType.other": "Lainnya",
-    "booking.message": "Detail Proyek / Pesan",
-    "booking.submit": "Kirim Inquiry",
-    "booking.success": "Inquiry berhasil dikirim! Saya akan menghubungi Anda segera.",
-    "booking.error": "Terjadi kesalahan. Silakan coba lagi atau hubungi via WhatsApp.",
 
     // Contact
     "contact.title": "Kontak",
@@ -110,8 +87,6 @@ export const translations = {
     "nav.experience": "Experience",
     "nav.skills": "Skills",
     "nav.portfolio": "Portfolio",
-    "nav.testimoni": "Testimonials",
-    "nav.booking": "Hire Me",
     "nav.contact": "Contact",
     "nav.blog": "Blog",
 
@@ -143,27 +118,6 @@ export const translations = {
     // Portfolio
     "portfolio.title": "Portfolio",
     "portfolio.viewDetail": "View on Google Drive",
-
-    // Testimoni
-    "testimoni.title": "Testimonials",
-    "testimoni.note": "Testimonials will be updated soon",
-
-    // Booking
-    "booking.title": "Work With Me",
-    "booking.subtitle": "Fill out the form below to discuss a project or collaboration",
-    "booking.name": "Full Name",
-    "booking.whatsapp": "WhatsApp Number",
-    "booking.email": "Email (optional)",
-    "booking.serviceType": "Service Type",
-    "booking.serviceType.socialMedia": "Social Media Management",
-    "booking.serviceType.contentCreation": "Content Creation",
-    "booking.serviceType.metaAds": "Meta Ads / Paid Advertising",
-    "booking.serviceType.consultation": "Digital Marketing Consultation",
-    "booking.serviceType.other": "Other",
-    "booking.message": "Project Details / Message",
-    "booking.submit": "Send Inquiry",
-    "booking.success": "Inquiry sent successfully! I will contact you soon.",
-    "booking.error": "An error occurred. Please try again or contact via WhatsApp.",
 
     // Contact
     "contact.title": "Contact",

@@ -51,22 +51,11 @@ export interface PortfolioItem {
   sampleImageLabel: string;
 }
 
-export interface Testimoni {
-  id: string;
-  name: string;
-  role: string;
-  roleEn: string;
-  message: string;
-  messageEn: string;
-  isPlaceholder: boolean;
-}
-
 export interface SiteConfig {
   profile: Profile;
   social: Social;
-  whatsapp: string; // placeholder
+  whatsappLink: string; // full wa.me URL (number or chat link)
   experiences: Experience[];
   skills: Skills;
   portfolio: PortfolioItem[];
-  testimoni: Testimoni[];
 }

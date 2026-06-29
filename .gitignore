@@ -47,3 +47,5 @@ next-env.d.ts
 dev-server.log
 hero-navbar-check.png
 public/desktop.ini
+
+.vercel

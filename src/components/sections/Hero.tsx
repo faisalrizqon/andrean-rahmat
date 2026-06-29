@@ -27,7 +27,7 @@ const item = {
 
 const stats = [
   { value: "1+", labelId: "Tahun Pengalaman", labelEn: "Year Experience", Icon: FiTrendingUp },
-  { value: "10+", labelId: "Klien Ditangani", labelEn: "Clients Handled", Icon: FiZap },
+  { value: "10+", labelId: "Proyek Selesai", labelEn: "Projects Completed", Icon: FiZap },
   { value: "50+", labelId: "Konten Dibuat", labelEn: "Contents Created", Icon: FiTrendingUp },
 ];
 
@@ -54,7 +54,7 @@ const socials = [
   },
   {
     key: "hero.socialWhatsapp",
-    href: `https://wa.me/${siteConfig.whatsapp}`,
+    href: siteConfig.whatsappLink,
     Icon: FaWhatsapp,
     badgeClass: "bg-[#25D366] text-white",
     hoverClass: "hover:scale-110 hover:shadow-lg hover:shadow-[#25D366]/30",
@@ -229,8 +229,10 @@ export default function Hero() {
               style={{ x: badgeX, y: badgeY }}
               className="absolute -top-4 -right-4 z-30 flex h-16 w-16 flex-col items-center justify-center rounded-2xl bg-accent-500 shadow-xl sm:h-20 sm:w-20"
             >
-              <span className="text-lg font-bold leading-none text-white sm:text-2xl">3+</span>
-              <span className="hidden text-[0.5rem] font-medium uppercase tracking-wider text-white/80 sm:block">Years</span>
+              <span className="text-lg font-bold leading-none text-white sm:text-2xl">1+</span>
+              <span className="hidden text-[0.5rem] font-medium uppercase tracking-wider text-white/80 sm:block">
+                {locale === "id" ? "Tahun" : "Year"}
+              </span>
             </motion.div>
 
             {/* Floating bottom badge */}

@@ -15,8 +15,6 @@ const NAV_ITEMS: NavItem[] = [
   { id: "experience", labelKey: "nav.experience" },
   { id: "skills", labelKey: "nav.skills" },
   { id: "portfolio", labelKey: "nav.portfolio" },
-  { id: "testimoni", labelKey: "nav.testimoni" },
-  { id: "booking", labelKey: "nav.booking" },
   { id: "contact", labelKey: "nav.contact" },
   { id: "blog", labelKey: "nav.blog" },
 ];
